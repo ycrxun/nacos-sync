@@ -36,6 +36,7 @@ const I18N_CONF = {
   ServiceSync: {
     title: 'Service Synchronization',
     serviceNamePlaceholder: 'Please enter service name',
+    nameSpacePlaceholder: 'Please enter namespace',
     search: 'Search',
     addSync: 'New Sync',
     serviceName: 'Service Name',

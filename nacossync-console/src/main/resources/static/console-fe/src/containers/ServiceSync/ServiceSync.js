@@ -22,6 +22,7 @@ class ServiceSync extends React.Component {
       loading: true,
       search: {
         serviceName: '',
+        nameSpace: '',
       },
     };
   }
@@ -105,6 +106,14 @@ class ServiceSync extends React.Component {
               value={search.serviceName}
               placeholder={locale.serviceNamePlaceholder}
               onChange={serviceName => this.onChangeSearchForm({ serviceName })}
+            />
+          </FormItem>
+          <FormItem label={`${locale.nameSpace}:`}>
+            <Input
+              style={{ width: 198 }}
+              value={search.nameSpace}
+              placeholder={locale.nameSpacePlaceholder}
+              onChange={nameSpace => this.onChangeSearchForm({ nameSpace })}
             />
           </FormItem>
           <Button type="primary" onClick={() => this.turnPage(1)}>{locale.search}</Button>

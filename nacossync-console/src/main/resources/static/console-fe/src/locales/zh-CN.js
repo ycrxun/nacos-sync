@@ -36,6 +36,7 @@ const I18N_CONF = {
   ServiceSync: {
     title: '同步服务',
     serviceNamePlaceholder: '请输入服务名',
+    nameSpacePlaceholder: '请输入命名空间',
     search: '搜索',
     addSync: '新增同步',
     serviceName: '服务名',

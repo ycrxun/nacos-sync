@@ -18,7 +18,7 @@ class AddSyncDialog extends React.Component {
     this.state = {
       visible: false,
       destClusterId: '',
-      groupName: '',
+      groupName: 'DEFAULT_GROUP',
       nameSpace: '',
       serviceName: '',
       sourceClusterId: '',
@@ -73,6 +73,7 @@ class AddSyncDialog extends React.Component {
           </FormItem>
           <FormItem label={`${locale.groupName}:`}>
             <Input
+              defaultValue={this.state.groupName}
               placeholder={locale.groupNamePlaceholder}
               onChange={groupName => this.setState({ groupName })}
             />
