@@ -72,6 +72,7 @@ public class TaskListQueryProcessor implements Processor<TaskListQueryRequest, T
             taskModel.setDestClusterId(taskDO.getDestClusterId());
             taskModel.setSourceClusterId(taskDO.getSourceClusterId());
             taskModel.setServiceName(taskDO.getServiceName());
+            taskModel.setNameSpace(taskDO.getNameSpace());
             taskModel.setGroupName(taskDO.getGroupName());
             taskModel.setTaskStatus(taskDO.getTaskStatus());
             taskList.add(taskModel);

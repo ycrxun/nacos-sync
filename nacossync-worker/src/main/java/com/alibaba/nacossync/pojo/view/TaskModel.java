@@ -30,6 +30,7 @@ public class TaskModel {
     private String destClusterId;
     private String serviceName;
     private String groupName;
+    private String nameSpace;
     private String taskStatus;
 
 }
