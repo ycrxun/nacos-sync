@@ -62,7 +62,7 @@ public class NacosSyncToEurekaServiceImpl implements SyncService {
     public boolean delete(TaskDO taskDO) {
         try {
             NamingService sourceNamingService =
-                    nacosServerHolder.get(taskDO.getSourceClusterId(), taskDO.getGroupName());
+                    nacosServerHolder.get(taskDO.getSourceClusterId(), taskDO.getNameSpace());
             EurekaNamingService destNamingService =
                     eurekaServerHolder.get(taskDO.getDestClusterId(), taskDO.getGroupName());
 
@@ -88,7 +88,7 @@ public class NacosSyncToEurekaServiceImpl implements SyncService {
     public boolean sync(TaskDO taskDO) {
         try {
             NamingService sourceNamingService =
-                    nacosServerHolder.get(taskDO.getSourceClusterId(), taskDO.getGroupName());
+                    nacosServerHolder.get(taskDO.getSourceClusterId(), taskDO.getNameSpace());
             EurekaNamingService destNamingService =
                     eurekaServerHolder.get(taskDO.getDestClusterId(), taskDO.getGroupName());
 
